@@ -123,7 +123,7 @@ def train_model(data_dir: str, model_dir: str):
     # Create directories if not exists
     Path(model_dir).mkdir(parents=True, exist_ok=True)
     print("Saving the model")
-    model.save(model_dir+"/"+"model.h5") 
+    model.save(model_dir) 
     
     print("Model save successfully.")
     
