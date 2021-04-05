@@ -25,7 +25,7 @@ def download_dataset(data_dir: str):
     print("Directory created successfully")    
 
     client = Minio(url, key, secret, secure=False)
-    client.fget_object('iaf-ai', 'datasets/fraud-detections/dataset.csv', data_dir+'/dataset.csv')
+    client.fget_object('iaf-ai', 'datasets/fraud-detection/dataset.csv', data_dir+'/dataset.csv')
     print("Dataset downloaded successfully.")
     print(os.listdir(data_dir))
 
