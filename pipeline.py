@@ -16,7 +16,7 @@ def download_dataset(data_dir: str):
     
     import os
     from minio import Minio
-    url="minio-kubeflow.apps.sun.cp.fyre.ibm.com"
+    url="minio-kubeflow.apps.sat.cp.fyre.ibm.com"
     key='minio'
     secret='minio123'
 
@@ -152,7 +152,7 @@ def export_model(
 
     s3 = boto3.client(
         "s3",
-        endpoint_url="http://minio-kubeflow.apps.sun.cp.fyre.ibm.com",
+        endpoint_url="http://minio-kubeflow.apps.sat.cp.fyre.ibm.com",
         aws_access_key_id="minio",
         aws_secret_access_key="minio123",
         config=Config(signature_version="s3v4"),
