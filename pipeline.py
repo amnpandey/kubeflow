@@ -192,6 +192,8 @@ def export_model(
     description="A sample pipeline to demonstrate multi-step model training, evaluation, export",
 )
 def pipeline(
+    url: str = '',
+    token: str = '',
     data_dir: str = "/train/data",
     model_dir: str = "/train/model",
     export_bucket: str =  "iaf-ai",
